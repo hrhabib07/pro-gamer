@@ -1,0 +1,74 @@
+
+body{
+    max-width: 1440px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+}
+
+/* common styles for all  */
+.paragraph-default{
+    font-size: 20px;
+    color: #534C64;
+
+}
+.btn-primary{
+    padding: 20px 40px;
+    border-radius: 48px;
+    border: none;
+    font-size: 20px;
+    background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+    color: white;
+}
+.btn-secondary{
+    padding: 20px 40px;
+    border-radius: 48px;
+    border: none;
+    font-size: 20px;
+    background-color: #4EC5F7;
+    color: white;
+    margin-left: 24px;
+}
+
+
+/* styles for top banner starts here  */
+.top-banner-heading{
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    text-align: center;
+    margin: 0;
+}
+.top-banner-title{
+    margin: 0;
+    font-size: 95px;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+}
+
+.top-banner-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.top-banner-description{
+    background-image: url('../images/Group\ 14.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    display: flex;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-container{
+    margin: 24px 0 40px 0;
+}
+.text-container{
+    text-align: start;
+}
+.top-banner-img{
+    width: 50%;
+}
