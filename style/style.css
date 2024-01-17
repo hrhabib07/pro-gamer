@@ -13,18 +13,18 @@ body{
 
 }
 .btn-primary{
-    padding: 20px 40px;
-    border-radius: 48px;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
     border: none;
-    font-size: 20px;
+    font-size: 1rem;
     background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
     color: white;
 }
 .btn-secondary{
-    padding: 20px 40px;
-    border-radius: 48px;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
     border: none;
-    font-size: 20px;
+    font-size: 1rem;
     background-color: #4EC5F7;
     color: white;
     margin-left: 24px;
@@ -89,25 +89,26 @@ li a:hover {
     background: rgba(11, 2, 35, 0.10);
 }
 /* styles for top banner starts here  */
+.top-banner-container{
+    display: flex;
+    justify-content: space-around;
+}
 .top-banner-heading{
     color: #0B0223;
     text-align: center;
-    font-size: 48px;
+    font-size: 3rem;
     text-align: center;
     margin: 0;
 }
 .top-banner-title{
     margin: 0;
-    font-size: 95px;
+    font-size: 6rem;
     background-clip: text;
     color: transparent;
     background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
 }
 
-.top-banner-container{
-    display: flex;
-    justify-content: space-around;
-}
+
 
 .top-banner-description{
     background-image: url('../images/Group\ 14.png');
@@ -133,6 +134,10 @@ li a:hover {
 
 /* Responsive media query code  */
 @media screen and (max-width: 576px) {
+    body{
+        max-width: 1112px;
+        margin: 0 auto;
+    }
     .nav-bar{
         flex-direction: column;
         height: auto;
@@ -144,5 +149,16 @@ li a:hover {
         flex-direction: column;
         text-align: center;
     }
-
+    .top-banner-container{
+        flex-direction: column-reverse;
+    }
+    .top-banner-img{
+        width: 100%;
+    }
+    .top-banner-img img{
+        width: 100%;
+    }
+    .top-banner-description{
+        width: 100%;
+    }
 }
