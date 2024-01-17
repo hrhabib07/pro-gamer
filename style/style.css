@@ -40,7 +40,7 @@ body{
 
 
 .fa-icon-space{
-    margin-right: 10px;
+    margin-left: 5px;  
 } 
 /* styles for navigation bar start here  */
 .nav-bar{
@@ -63,15 +63,18 @@ align-items: center;
     font-size: 45px;
 }
 ul {
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
     padding: 0;
-    overflow: hidden;
-    font-size: 18px;   
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
 li {
-    float: left;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    display: block;
 }
 
 li a {
@@ -125,4 +128,21 @@ li a:hover {
 }
 .top-banner-img{
     width: 50%;
+}
+
+
+/* Responsive media query code  */
+@media screen and (max-width: 576px) {
+    .nav-bar{
+        flex-direction: column;
+        height: auto;
+    }
+    .logo h2{
+        font-size: 30px;
+    }
+    ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
 }
