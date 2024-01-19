@@ -418,9 +418,32 @@ margin-top: 45px;
     .game-row-2{
         flex-direction: column;
     }
-    
-
     .footer-info-container{
-        
+        flex-direction: column;
     }
+    .footer-info-container p{
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+     
+.footer-icon-container{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.fa-icon-gap{
+    margin-right: 10px;
+    cursor: pointer;   
+}
+.footer-bottom-info{
+    flex-direction: column;
+}
+.footer-bottom-info p{
+    margin-right: 0;
+    margin-top: 4px;
+    text-align: center;
+    cursor: pointer;
+}
 }
