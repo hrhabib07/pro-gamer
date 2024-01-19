@@ -247,23 +247,26 @@ li a:hover {
 
 
 .game-cards{
-    width: 260px;
-height: 80px;
+    max-width: 17rem;
+max-height: 5rem;
 border: 1.5px solid transparent;
 background-color: white;
 border-radius: 50px;
-margin-right: 25px;
+margin: 25px;
+
 
 }
 .game-card{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 .game-cards :hover{
     border: 1.5px solid #FF42A5;
     border-radius: 50px;
     color: #FF42A5;
+    
     
 }
 .game-card :hover{
@@ -281,6 +284,7 @@ margin-right: 25px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+  
     
 }
 .game-row-2{
@@ -293,7 +297,66 @@ margin-right: 25px;
     justify-self: center;
 }
 
+/* Styles for footer section starts here  */
+footer{
+    max-width: 100%;
+    max-height: 636px;
+    background-color: #0B0223;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;  
+}
 
+
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+}
+.logo-container img{
+    width: 86.041px;
+height: 40px;
+margin-top: 45px;
+}
+.logo-container h2{
+    font-size: 45px;
+    margin-left: 5px;
+}
+.footer-info-container{
+    display: flex;
+}
+.footer-info-container p{
+    margin-right: 60px;
+    margin-top: 56px;
+    margin-bottom: 56px;
+    cursor: pointer;
+}
+
+.footer-icon-container{
+    display: flex;
+    justify-content: center;
+}
+.fa-icon-gap{
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+
+.footer-bottom-info{
+    display: flex;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-bottom-info p{
+    margin-right: 60px;
+    margin-top: 56px;
+    cursor: pointer;
+}
+.copyright{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+
+}
 /* Responsive media query code  */
 @media screen and (max-width: 576px) {
     body{
@@ -342,13 +405,22 @@ margin-right: 25px;
         width: 50%;
         max-width: 10rem;
     }
+
+    .game-card-container{
+        height: 70rem;
+    }
     
+
     .game-row-1{
         flex-direction: column;
-        
+        margin-bottom: 0;
     }
     .game-row-2{
         flex-direction: column;
     }
     
+
+    .footer-info-container{
+        
+    }
 }
